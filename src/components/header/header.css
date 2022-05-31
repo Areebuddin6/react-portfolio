@@ -2,6 +2,7 @@ header {
     margin-top: 5rem;
     overflow: hidden;
     height: 100vh;
+    user-select: none;
 }
 
 .header-container {

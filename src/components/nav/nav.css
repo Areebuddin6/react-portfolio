@@ -19,15 +19,32 @@ nav a {
     border-radius: 50%;
     font-size: 1.1rem;
     color: var(--color-white);
+    transition: var(--transition);
 }
+
 
 nav a:hover {
     background: var(--color-dark);
-    transition: var(--transition);
     transform: scale(1.2);
 }
 
 nav a.active {
     transform: scale(1.2);
     background: var(--color-light);
+}
+
+nav a.active .nav__title {
+    background: black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: -2px -2px 15px 2px grey;
+}
+
+.nav__title {
+    position: absolute; 
+     bottom: 4.7rem; 
+    background: black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: -2px -2px 15px 2px grey;
 }
