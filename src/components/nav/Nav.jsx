@@ -11,7 +11,11 @@ const Nav = () => {
 		if (active === state) return "active";
 		return "";
 	};
-
+	const options = {
+		followCursor: true,
+		shiftX: 20,
+		shiftY: 0,
+	};
 	const capitalise = (string) => {
 		return string[0].toUpperCase() + string.slice(1).toLowerCase();
 	};
@@ -20,12 +24,13 @@ const Nav = () => {
 		<nav>
 			{navBars.map(([id, icon]) => {
 				return (
-					<ReactHover>
+					<ReactHover key={id} options={options}>
 						<Trigger type="trigger">
 							<a
+								key={id}
 								href={`#${id}`}
 								onClick={() => setActive(`#${id}`)}
-								class={setActiveClass(`#${id}`)}
+								className={setActiveClass(`#${id}`)}
 								onMouseEnter={() => setDisplay("inline")}
 								onMouseLeave={() => setDisplay("none")}
 							>

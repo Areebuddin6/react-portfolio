@@ -1,0 +1,42 @@
+section {
+    user-select: none;
+}
+
+#about {
+    margin-right: 3rem;
+    margin-left: 3rem;
+    display: grid;
+    /* grid-template-rows: 1fr 2fr 3fr; */
+    grid-template-areas:
+        "photo"
+        "frontend"
+        "me";
+    gap: 3rem;
+}
+
+.about__photo__container {
+    grid-area: "photo";
+    width: 75%;
+    background: linear-gradient(45deg, #Df00a9, #0a84ff);
+}
+
+.about__photo {
+    transform: rotate(10deg);
+    transition: all 500ms ease-in-out;
+}
+
+.about__photo:hover {
+    transition: all 500ms ease-in-out;
+    transform: rotate(0deg);
+}
+
+.grid-center {
+    display: grid;
+    place-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    #about {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

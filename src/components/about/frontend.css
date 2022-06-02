@@ -1,0 +1,48 @@
+.about__front-end {
+    grid-area: "frontend";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__me {
+    grid-area: "me"
+}
+
+.frontend {
+    grid-area: "icon";
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+    box-shadow: -2px -2px 15px 2px rgba(128, 128, 128, 0.385);
+}
+
+.about__languages {
+    margin: auto;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about__language {
+    display: flex;
+    gap: 0.3rem;
+    margin-left: 3rem;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* Utility classes */
+.grid-center {
+    display: grid;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-3 {
+    margin: 2rem 0;
+}
