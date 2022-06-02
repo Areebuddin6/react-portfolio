@@ -15,6 +15,7 @@ nav {
 
 nav a {
     padding: 0.5rem 1rem;
+    display: inline-block;
     /* background: var(--color-dark); */
     background: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -23,29 +24,59 @@ nav a {
 }
 
 
-nav a:hover {
+.tooltip a:hover {
     background: rgba(0, 0, 0, 0.6);
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: var(--transition);
 }
 
-nav a.active {
-    transform: scale(1.5);
+.active {
+    transform: scale(1.2);
     background: var(--color-light);
 }
 
-nav a.active .nav__title {
-    background: black;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: -2px -2px 15px 2px grey;
+/* Tooltip container */
+.tooltip {
+    user-select: none;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
 }
 
-.nav__title {
-    position: absolute; 
-     bottom: 4.7rem; 
-    background: black;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: -2px -2px 15px 2px grey;
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    /* width: 100%; */
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 1rem;
+    margin-left: -60px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
 }
