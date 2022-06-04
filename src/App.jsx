@@ -12,18 +12,18 @@ import "./App.css"
 
 const App = () => {
   return (
-    <>
-        <Header />
-        <Nav />
-        <About />
-        <Experience />
-        <Services />
-        <Portfolio />
-        <Testimonials />
-        <Contact />
-        <Footer />
-    </>
-  )
+		<div className="app">
+			<Header />
+			<Nav />
+			<About />
+			<Experience />
+			<Services />
+			<Portfolio />
+			<Testimonials />
+			<Contact />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;

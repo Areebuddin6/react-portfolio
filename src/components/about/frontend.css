@@ -18,8 +18,6 @@
 }
 
 .about__languages {
-    margin: auto;
-    text-align: center;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
@@ -28,8 +26,7 @@
 .about__language {
     display: flex;
     gap: 0.3rem;
-    margin-left: 3rem;
-    /* justify-content: center; */
+    margin-left: 1rem;
     align-items: center;
 }
 
@@ -45,4 +42,9 @@
 
 .mt-3 {
     margin: 2rem 0;
+}
+@media screen and (min-width: 768px) {
+    .about__language {
+        margin-left: 3rem;
+    }
 }

@@ -6,15 +6,15 @@ import { AiOutlineCustomerService } from "react-icons/ai";
 
 const home = <AiOutlineHome />,
 	about = <AiOutlineUser />,
-	contact = <TiContacts />,
 	experience = <BiBook />,
+	contact = <TiContacts />,
 	services = <AiOutlineCustomerService />;
 
 const navBars = [
 	["home", home],
 	["about", about],
-	["contact", contact],
 	["experience", experience],
+	["contact", contact],
 	["services", services],
 ];
 
