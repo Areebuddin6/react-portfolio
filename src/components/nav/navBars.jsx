@@ -14,8 +14,8 @@ const navBars = [
 	["home", home],
 	["about", about],
 	["experience", experience],
-	["contact", contact],
 	["services", services],
+	["contact", contact],
 ];
 
 export default navBars;

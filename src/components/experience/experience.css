@@ -1,5 +1,6 @@
 #experience {
     display: grid;
+    height: auto;
 }
 
 .experience__frontend__container,
