@@ -14,7 +14,7 @@ const navBars = [
 	["home", home],
 	["about", about],
 	["experience", experience],
-	["services", services],
+	// ["services", services],
 	["contact", contact],
 ];
 
