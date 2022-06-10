@@ -8,6 +8,7 @@ import portfolio6 from "../../assets/portfolio6.jpg";
 
 const PortfolioCards = () => {
 	const portfolios = [
+<<<<<<< HEAD
 		{ id: 1, portfolio: portfolio1 },
 		{ id: 2, portfolio: portfolio2 },
 		{ id: 3, portfolio: portfolio3 },
@@ -20,6 +21,20 @@ const PortfolioCards = () => {
 			{portfolios.map(({ id, portfolio }) => {
 				return (
 					<div key={id}>
+=======
+		portfolio1,
+		portfolio2,
+		portfolio3,
+		portfolio4,
+		portfolio5,
+		portfolio6,
+	];
+	return (
+		<div className="container portfolio__container">
+			{portfolios.map((portfolio) => {
+				return (
+					<>
+>>>>>>> 9736fed3217d5e59fc5df7b77535ba7fe3d0e80d
 						<div className="portfolio__item">
 							<img src={portfolio} alt="" className="portfolio__item__image" />
 						</div>
@@ -35,7 +50,11 @@ const PortfolioCards = () => {
 						>
 							Live Demo
 						</a>
+<<<<<<< HEAD
 					</div>
+=======
+					</>
+>>>>>>> 9736fed3217d5e59fc5df7b77535ba7fe3d0e80d
 				);
 			})}
 		</div>
