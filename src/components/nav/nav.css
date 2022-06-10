@@ -30,8 +30,9 @@ nav a {
 }
 
 .active {
-    transform: scale(1.2);
-    background: var(--color-light);
+    transform: scale(2);
+    background: white;
+    color: black;
 }
 
 /* Tooltip container */

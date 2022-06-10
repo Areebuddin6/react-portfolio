@@ -1,6 +1,5 @@
-#experience {
+.experience__container {
     display: grid;
-    height: auto;
 }
 
 .experience__frontend__container,
@@ -37,7 +36,7 @@
 
 /* MEDIA QUERIES FOR MEDIUM DEVICES */
 @media screen and (min-width: 768px) {
-    #experience {
+    .experience__container {
         grid-template-columns: 1fr 1fr;
     }
 }

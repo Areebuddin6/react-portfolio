@@ -1,0 +1,10 @@
+.portfolio__container {
+    display: grid;
+    place-items: center;
+    border: 1px dashed red;
+}
+
+.portfolio__item+a {
+    /* background: red; */
+    justify-self: middle;
+}
