@@ -23,18 +23,20 @@ const PortfolioCards = () => {
 						<div className="portfolio__item">
 							<img src={portfolio} alt="" className="portfolio__item__image" />
 						</div>
-						<a
-							href="https://github.com/Areebuddin6/game.github.io"
-							target="_blank"
-						>
-							Github Code
-						</a>
-						<a
-							href="https://areebuddin6.github.io/game.github.io/"
-							target="_blank"
-						>
-							Live Demo
-						</a>
+						<div className="portfolio__links">
+							<a
+								href="https://github.com/Areebuddin6/game.github.io"
+								target="_blank"
+							>
+								Github Code
+							</a>
+							<a
+								href="https://areebuddin6.github.io/game.github.io/"
+								target="_blank"
+							>
+								Live Demo
+							</a>
+						</div>
 					</div>
 				);
 			})}

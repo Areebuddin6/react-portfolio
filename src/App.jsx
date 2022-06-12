@@ -13,7 +13,7 @@ import { useMemo } from "react";
 export const SectionsContex = createContext();
 // export const CurrentContext = createContext();
 const App = () => {
-	const [current, setCurrent] = useState("");
+	const [current, setCurrent] = useState("home");
 	const [sections, setSections] = useState([]);
 	const appRef = useRef();
 	const value = useMemo(() => ({ current, setCurrent }), [current]);

@@ -1,16 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import PortfolioCards from "./PortfolioCards";
 import "./portfolio.css";
 
 const Portfolio = () => {
-	const portRef = useRef();
-	useEffect(() => {
-		portRef.current.addEventListener("scroll", () => {
-			console.log(scrollY);
-		});
-	});
 	return (
-		<section id="portfolio" ref={portRef}>
+		<section id="portfolio">
 			<h5>My Recent Projects</h5>
 			<h2>Portfolio</h2>
 			<PortfolioCards />
