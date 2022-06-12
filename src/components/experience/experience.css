@@ -2,6 +2,14 @@
     display: grid;
 }
 
+#experience {
+    border: 1px solid red;
+    height: 100vh;
+    box-sizing: content-box;
+    margin: 0;
+    /* padding-top: 3rem; */
+}
+
 .experience__frontend__container,
 .experience__backend__container {
     display: grid;

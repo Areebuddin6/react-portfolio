@@ -24,7 +24,10 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
 }
+
+
 
 body {
     background: var(--color-bg);
@@ -55,6 +58,10 @@ h6 {
 
 .text-light {
     color: var(--color-primary);
+}
+
+section {
+    min-height: 100vh;
 }
 
 section > h2, 

@@ -1,7 +1,11 @@
 .portfolio__container {
     display: grid;
     place-items: center;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
+    }
+
+    #portfolio {
+        margin-top: 5rem;
 }
 
 .portfolio__item+a {

@@ -1,26 +1,40 @@
-<<<<<<< HEAD
-import { useEffect } from "react";
-=======
-import { useState } from "react";
->>>>>>> 9736fed3217d5e59fc5df7b77535ba7fe3d0e80d
+import { useEffect, useContext } from "react";
 import navBars from "./navBars";
-import windowOnScroll from "./windowOnScroll";
+import { SectionsContex } from "../../App";
 import "./nav.css";
 
 const Nav = () => {
-<<<<<<< HEAD
-	// useEffect(() => {
-	// 	window.addEventListener("scroll", windowOnScroll);
-	// }, []);
-=======
-	windowOnScroll();
->>>>>>> 9736fed3217d5e59fc5df7b77535ba7fe3d0e80d
+	const [sections, { current, setCurrent }] = useContext(SectionsContex);
+	useEffect(() => {
+		window.addEventListener("scroll", () => {
+			sections.forEach((section) => {
+				const sectionTop = section.offsetTop;
+				const sectionHeight = section.clientHeight;
+				if (scrollY >= sectionTop - sectionHeight / 3)
+					setCurrent(section.getAttribute("id"));
+			});
+		});
+		return () => {
+			window.removeEventListener("scroll", () => {
+				sections.forEach((section) => {
+					const sectionTop = section.offsetTop;
+					const sectionHeight = section.clientHeight;
+					if (scrollY >= sectionTop - sectionHeight / 3)
+						setCurrent(section.getAttribute("id"));
+				});
+			});
+		};
+	});
 	return (
-		<nav>
+		<nav id="nav">
 			{navBars.map(([id, icon]) => {
 				return (
 					<div className="tooltip" key={id}>
-						<a key={id} href={`#${id}`}>
+						<a
+							key={id}
+							href={`#${id}`}
+							className={current === id ? "active" : ""}
+						>
 							{icon}
 						</a>
 						<span className="tooltiptext">{id}</span>
