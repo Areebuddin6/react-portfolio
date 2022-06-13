@@ -1,8 +1,15 @@
 import React from 'react'
-import "./testimonials.css"
+import Testimonial from "./Testimonial";
+import "./testimonials.css";
 
 const Testimonials = () => {
-  return <section>Testimonials</section>;
-}
+	return (
+		<section id="testimonials">
+			<h5>Review from Clients</h5>
+			<h2>Reviews</h2>
+			<Testimonial />
+		</section>
+	);
+};
 
 export default Testimonials

@@ -24,10 +24,15 @@
     background: blue;
 }
 
+/* MEDIA QUERIES FOR MEDIUM DEVICES */
+@media screen and (min-width: 768px) {
+    .portfolio__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 /* MEDIA QUERIES FOR LARGE DEVICES */
 @media screen and (min-width: 1024px) {
     .portfolio__container {
-
         grid-template-columns: repeat(3, 1fr);
     }
 

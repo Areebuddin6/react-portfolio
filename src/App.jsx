@@ -30,7 +30,7 @@ const App = () => {
 				<Experience />
 				<Portfolio />
 				<Testimonials />
-				<Contact />t
+				<Contact />
 				<Footer />
 			</div>
 		</SectionsContex.Provider>
