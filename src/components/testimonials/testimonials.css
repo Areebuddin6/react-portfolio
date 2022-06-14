@@ -1,7 +1,11 @@
+#testimonials h2 {
+    margin-bottom: 1.5rem;
+}
+
 .testimonial__container {
     max-width: 40rem;
     padding-bottom: 3rem;
-    background: rgba(0, 0, 255, 0.485);
+    background: rgba(0, 0, 255, 0.2);
     border-radius: 4rem;
 }
 
@@ -11,8 +15,6 @@
     max-width: 100%;
     display: grid;
     place-items: center;
-    /* z-index: -1; */
-    /* gap: 3rem; */
 }
 
 .testimonial__image>img {
@@ -21,6 +23,7 @@
 }
 
 .testimonial__review {
+    padding: 0 3rem;
     text-align: center;
     max-width: 600px;
 }

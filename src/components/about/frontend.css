@@ -9,12 +9,11 @@
     grid-area: "me"
 }
 
-.frontend {
-    grid-area: "icon";
+.frontend__icon {
+    /* grid-area: "icon"; */
     width: 3rem;
     height: 3rem;
-    margin: 1rem;
-    box-shadow: -2px -2px 15px 2px rgba(128, 128, 128, 0.385);
+    margin-bottom: 1rem;
 }
 
 .about__languages {

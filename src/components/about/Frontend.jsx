@@ -8,7 +8,7 @@ const Frontend = () => {
 	return (
 		<div className="about__front-end">
 			<div className="grid-center">
-				<img src={frontend} alt="Programming" className="frontend" />
+				<img src={frontend} alt="Programming" className="frontend__icon" />
 			</div>
 			<div className="about__info">
 				<h2 className="text-center">Front-end Developer</h2>

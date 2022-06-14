@@ -1,0 +1,130 @@
+.contact {
+    padding-bottom: 5rem;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact__container {
+    padding-top: 1rem;
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    grid-template-columns: 70%;
+}
+
+.contact__mail_icon {
+    grid-area: gridIcon;
+}
+
+.contact__mail_icon,
+.contact__icon {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(174, 224, 230);
+}
+
+.contact__form__container {
+    grid-area: gridForm;
+    padding: 0.5rem;
+    display: grid;
+    direction: column;
+    gap: 1.5rem;
+}
+
+.contact__form__container input[type="text"],
+.contact__form__container input[type="email"] {
+    border-radius: 2rem;
+    padding: 1rem;
+    height: 1.8rem;
+    font-weight: 600;
+}
+
+.contact__form__container input[type="submit"] {
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    background: linear-gradient(to right, rgb(140, 124, 222), rgb(47, 194, 228));
+}
+
+.contact__form__container input[type="submit"]:hover {
+    cursor: pointer;
+    color: antiquewhite;
+    transition: all 400ms ease;
+}
+
+#contact__form__textfield {
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+/* Contact CTA */
+
+.contact__cta {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.contact__whatsapp,
+.contact__messenger {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    background: rgba(0, 0, 255, 0.2);
+    border-radius: 3rem;
+}
+
+.contact__cta h2,
+.contact__cta h5 {
+    font-weight: 600;
+}
+
+.contact__cta a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact__cta a:hover {
+    font-weight: 400;
+    color: antiquewhite;
+}
+
+/* Email CSS */
+.email__container {
+    display: grid;
+    grid-template-areas:
+        "gridIcon gridIcon"
+        "gridH2 gridH2"
+        "gridH5 gridH5"
+        "gridForm gridForm";
+    background: rgba(0, 0, 255, 0.2);
+    border-radius: 3rem;
+}
+
+.email__container h2 {
+    grid-area: gridH2;
+    margin-top: -1rem;
+}
+
+.email__container h5 {
+    grid-area: gridH5;
+}
+
+.email__container h2,
+.email__container h5 {
+    text-align: center;
+    font-weight: var(--font-weight-text);
+}
+
+
+/* MEDIA QUERIES FOR LARGE DEVICES */
+@media screen and (min-width: 1024px) {
+    .contact__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

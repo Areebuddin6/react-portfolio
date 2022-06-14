@@ -81,7 +81,7 @@ nav a {
     border-style: solid;
     border-color: white transparent transparent transparent;
 }
-/* MEDIA QUERIES FOR MEDIUM DEVICES */
+/* MEDIA QUERIES FOR SMALL DEVICES */
 @media screen and (max-width: 400px) {
     nav {
         gap: 1rem;
@@ -90,7 +90,7 @@ nav a {
 
     nav a {
         padding: 0.5rem 0.5rem;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         /* border-radius: 40%; */
     }
 }

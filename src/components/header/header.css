@@ -2,10 +2,14 @@ header {
     box-sizing: content-box;
     padding-top: 5rem;
     overflow: hidden;
-    user-select: none;
     padding-top: 5rem;
     display: grid;
     height: max-content;
+}
+
+header h2,
+header h5 {
+    font-weight: var(--font-weight-text);
 }
 
 .header-container {
@@ -21,13 +25,17 @@ header {
     justify-content: center;
 }
 
+.cta a {
+    font-weight: var(--font-weight-text);
+}
+
 .header-socials {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     position: absolute;
     left: 0;
-    bottom: 3rem;
+    bottom: 7rem;
 }
 
 .header-socials::after {
@@ -53,7 +61,7 @@ header {
 .scroll-down {
     position: absolute;
     right: -5rem;
-    bottom: 5rem;
+    bottom: 10rem;
     transform: rotate(90deg);
     font-size: 1rem;
     font-weight: 500;

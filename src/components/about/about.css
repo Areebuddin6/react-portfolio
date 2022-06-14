@@ -1,17 +1,14 @@
-section {
-    user-select: none;
-}
-
-#about {
+.about__container {
     padding-top: 5rem;
     padding-right: 3rem;
     padding-left: 3rem;
     display: grid;
     /* grid-template-rows: 1fr 2fr 3fr; */
-    grid-template-areas:
+    /* grid-template-areas:
         "photo"
         "frontend"
         "me";
+        */
     gap: 3rem;
 }
 
@@ -43,7 +40,7 @@ section {
 
 /* MEDIA QUERIES FOR LARGE DEVICES */
 @media only screen and (min-width: 1024px) {
-    #about {
+    .about__container {
         grid-template-columns: repeat(3, 1fr);
     }
     .about__me {

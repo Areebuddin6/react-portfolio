@@ -10,6 +10,7 @@
 }
 
 .portfolio__links a {
+    font-weight: var(--font-weight-text);
     padding: 0.5rem;
     color: white;
     text-decoration: none;

@@ -10,6 +10,7 @@ const Nav = () => {
 			sections.forEach((section) => {
 				const sectionTop = section.offsetTop;
 				const sectionHeight = section.clientHeight;
+				// eslint-disable-next-line no-restricted-globals
 				if (scrollY >= sectionTop - sectionHeight / 3)
 					setCurrent(section.getAttribute("id"));
 			});
@@ -19,6 +20,7 @@ const Nav = () => {
 				sections.forEach((section) => {
 					const sectionTop = section.offsetTop;
 					const sectionHeight = section.clientHeight;
+					// eslint-disable-next-line no-restricted-globals
 					if (scrollY >= sectionTop - sectionHeight / 3)
 						setCurrent(section.getAttribute("id"));
 				});
@@ -32,6 +34,7 @@ const Nav = () => {
 					<div className="tooltip" key={id}>
 						<a
 							key={id}
+							rel="noreferrer"
 							href={`#${id}`}
 							className={current === id ? "active" : ""}
 						>

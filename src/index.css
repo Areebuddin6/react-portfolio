@@ -16,10 +16,12 @@
     --color-light: grey;
     --color-dark: rgba(0, 0, 0, 0.3);
     --transition: all 400 ease;
+    --font-weight-text: 800;
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
+    --transition-photo: 0.7s;
 }
 
 html {
@@ -70,6 +72,7 @@ section > h5 {
     display: block;
     text-align: center;
     color: var(--color-light);
+    font-weight: 800;
 }
 a {
     color: var(--color-primary);
