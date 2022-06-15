@@ -22,20 +22,20 @@
     transform: rotate(10deg);
     transition: all 500ms ease-in-out;
 }
-
-.about__photo:hover {
-    transition: all 500ms ease-in-out;
-    transform: rotate(0deg);
-}
-
 .grid-center {
     display: grid;
     place-items: center;
 }
 
 .about__me {
+    padding: 1rem;
+    font-weight: 600;
+    font-style: italic;
     text-align: center;
-    margin: auto;
+    border-radius: 3rem;
+    background: white;
+    color: black;
+    height: fit-content;
 }
 
 /* MEDIA QUERIES FOR LARGE DEVICES */
@@ -43,7 +43,12 @@
     .about__container {
         grid-template-columns: repeat(3, 1fr);
     }
-    .about__me {
-        padding-top: 5rem;
+}
+
+/* HOVER EFFECTS ONLY FOR DEVICES THAT SUPPORT IT */
+@media (hover: hover) {
+    .about__photo:hover {
+        transition: all 500ms ease-in-out;
+        transform: rotate(0deg);
     }
 }

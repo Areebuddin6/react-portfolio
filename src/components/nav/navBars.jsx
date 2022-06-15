@@ -9,8 +9,8 @@ const home = <AiOutlineHome />,
 	about = <AiOutlineUser />,
 	experience = <BiBook />,
 	contact = <TiContacts />,
-	portfolio = <BsBriefcase />,
-	services = <AiOutlineCustomerService />;
+	portfolio = <BsBriefcase />;
+	// services = <AiOutlineCustomerService />;
 
 const navBars = [
 	["home", home],

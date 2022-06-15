@@ -6,6 +6,7 @@ const backendLanguages = [
 	["NodeJS", "Intermediate"],
 	["ExpressJS", "Intermediate"],
 	["MongoDB", "Intermediate"],
+	["Firebase", "Intermediate"],
 ];
 const frontendLanguages = [
 	["HTML", "Experienced"],

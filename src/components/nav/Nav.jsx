@@ -29,7 +29,7 @@ const Nav = () => {
 	});
 	return (
 		<nav id="nav">
-			{navBars.map(([id, icon]) => {
+			{navBars.map(([id, icon], index) => {
 				return (
 					<div className="tooltip" key={id}>
 						<a

@@ -18,7 +18,7 @@ const Footer = () => {
 				<div className="footer__sectionlinks">
 					{sections.map((section) => {
 						return (
-							<li>
+							<li key={section}>
 								<a href={`#${section}`} rel="noreferrer">
 									{section}{" "}
 								</a>
@@ -30,6 +30,7 @@ const Footer = () => {
 					<a
 						href="https://www.facebook.com/areebuddin.phundreimayum.10"
 						rel="noreferrer"
+						target="_blank"
 					>
 						<Facebook
 							className="footer__social__icons"
@@ -37,10 +38,18 @@ const Footer = () => {
 							sx={{ borderRadius: "50%" }}
 						/>
 					</a>
-					<a href="https://github.com/Areebuddin6/Areebuddin6" rel="noreferrer">
+					<a
+						href="https://github.com/Areebuddin6/Areebuddin6"
+						rel="noreferrer"
+						target="_blank"
+					>
 						<GitHub className="footer__social__icons" fontSize="large" />
 					</a>
-					<a href="https://twitter.com/AreebuddinPhun" rel="noreferrer">
+					<a
+						href="https://twitter.com/AreebuddinPhun"
+						rel="noreferrer"
+						target="_blank"
+					>
 						<Twitter className="footer__social__icons" fontSize="large" />
 					</a>
 				</div>
