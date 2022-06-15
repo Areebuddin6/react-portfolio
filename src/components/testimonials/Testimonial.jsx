@@ -60,7 +60,7 @@ const Testimonial = () => {
 							<div className="testimonial__review">"{review}"</div>
 						</blockquote>
 						<figcaption>
-							<cite>- {name}</cite>
+							<cite>{"- " + name}</cite>
 						</figcaption>
 					</SwiperSlide>
 				);

@@ -10,7 +10,7 @@ nav {
     z-index: 2;
     bottom: 2rem;
     border-radius: 1.2rem;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(20px);
 }
 
 nav a {
@@ -33,7 +33,6 @@ nav .active {
     user-select: none;
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
     color: white;
     /* If you want dots under the hoverable text */
 }

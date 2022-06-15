@@ -8,10 +8,12 @@
 .github/
 firebase.json
 .pnp.js
+/dist
 
 #apikeys
 src/components/contact/apiKey.js
 
+firebase-debug.log
 # testing
 /coverage
 
