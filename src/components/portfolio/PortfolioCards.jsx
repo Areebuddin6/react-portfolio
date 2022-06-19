@@ -8,16 +8,53 @@ import portfolio6 from "../../assets/messaging_app.png";
 
 const PortfolioCards = () => {
 	const portfolios = [
-		{ id: 1, portfolio: portfolio1, title: "Rock Paper Scissor Game" },
-		{ id: 2, portfolio: portfolio2, title: "Amazon Clone" },
-		{ id: 3, portfolio: portfolio3, title: "Instagram Clone" },
-		{ id: 4, portfolio: portfolio4, title: "Netflix Clone" },
-		{ id: 5, portfolio: portfolio5, title: "TikTok Clone" },
-		{ id: 6, portfolio: portfolio6, title: "WhatsApp Clone" },
+		{
+			id: 1,
+			portfolio: portfolio1,
+			title: "Rock Paper Scissor Game",
+			githubLink:
+				"https://github.com/Areebuddin6/react-with-firebase-rock-paper-scissor-game",
+			demoLink: "https://rock-paper-scissor-areebuddin.firebaseapp.com/",
+		},
+		{
+			id: 2,
+			portfolio: portfolio2,
+			title: "Amazon Clone",
+			githubLink: "#",
+			demoLink: "#",
+		},
+		{
+			id: 3,
+			portfolio: portfolio3,
+			title: "Instagram Clone",
+			githubLink: "#",
+			demoLink: "#",
+		},
+		{
+			id: 4,
+			portfolio: portfolio4,
+			title: "Netflix Clone",
+			githubLink: "#",
+			demoLink: "#",
+		},
+		{
+			id: 5,
+			portfolio: portfolio5,
+			title: "TikTok Clone",
+			githubLink: "#",
+			demoLink: "#",
+		},
+		{
+			id: 6,
+			portfolio: portfolio6,
+			title: "WhatsApp Clone",
+			githubLink: "#",
+			demoLink: "#",
+		},
 	];
 	return (
 		<div className="container portfolio__container">
-			{portfolios.map(({ id, portfolio, title }) => {
+			{portfolios.map(({ id, portfolio, title, githubLink, demoLink }) => {
 				return (
 					<div key={id}>
 						<h2>{title}</h2>
@@ -32,18 +69,10 @@ const PortfolioCards = () => {
 							/>
 						</div>
 						<div className="portfolio__links">
-							<a
-								href="https://github.com/Areebuddin6/game.github.io"
-								target="_blank"
-								rel="noreferrer"
-							>
+							<a href={githubLink} target="_blank" rel="noreferrer">
 								Github Code
 							</a>
-							<a
-								href="https://areebuddin6.github.io/game.github.io/"
-								target="_blank"
-								rel="noreferrer"
-							>
+							<a href={demoLink} target="_blank" rel="noreferrer">
 								Live Demo
 							</a>
 						</div>
