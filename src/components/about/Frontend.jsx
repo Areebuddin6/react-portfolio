@@ -11,7 +11,7 @@ const Frontend = () => {
 				<img src={frontend} alt="Programming" className="frontend__icon" />
 			</div>
 			<div className="about__info">
-				<h2 className="text-center">Front-end Developer</h2>
+				<h2 className="text-center">Full Stack Developer</h2>
 				<h5 className="text-center">
 					I am always fasinated to learn new things and like to code anything
 					from scratch.

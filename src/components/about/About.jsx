@@ -43,8 +43,8 @@ const About = () => {
 						React, I can say that I am atleast intermediate level React
 						developer. I have an indepth knowledge of React hooks and other
 						React fundamentals. Web optimization is my thing, so I make sure
-						that any website that I developed is not optimized for perfomance.
-						If you have something to talk about, just contact me otherwise my
+						that any website that I developed is optimized for perfomance. If
+						you have something to talk about, just contact me otherwise my
 						projects will speak of my skills."
 					</div>
 				</div>

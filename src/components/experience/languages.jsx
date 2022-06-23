@@ -15,6 +15,8 @@ const frontendLanguages = [
 	["React", "Intermediate"],
 	["Bootstrap", "Intermediate"],
 	["Tailwind", "Intermediate"],
+	["jQuery", "Experienced"],
+	["SASS", "Intermediate"],
 ];
 
 const listLanguages = (languages, type) => {
